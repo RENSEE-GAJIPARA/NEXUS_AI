@@ -1,0 +1,13 @@
+{
+  "algorithm": "IsolationForest",
+  "contamination": 0.03,
+  "features": [
+    "total_amount",
+    "total_items",
+    "max_discount",
+    "avg_item_price"
+  ],
+  "dataset_rows": 15000,
+  "model_name": "anomaly_model",
+  "saved_at": "2026-09-21T16:30:55.165717"
+}

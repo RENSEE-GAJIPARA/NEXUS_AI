@@ -1,0 +1,11 @@
+location_id,city,state,country
+LOC_01,New York,NY,USA
+LOC_02,Los Angeles,CA,USA
+LOC_03,Chicago,IL,USA
+LOC_04,Houston,TX,USA
+LOC_05,Phoenix,AZ,USA
+LOC_06,Seattle,WA,USA
+LOC_07,Miami,FL,USA
+LOC_08,Boston,MA,USA
+LOC_09,Denver,CO,USA
+LOC_10,Atlanta,GA,USA

@@ -1,0 +1,93 @@
+product_id,product_name,category,subcategory,brand,supplier_id,unit_cost,unit_price
+PRD_0001,Brand_B Smartphones Model 1,Electronics,Smartphones,Brand_B,SUP_001,289.11,524.05
+PRD_0002,Brand_C Smartphones Model 2,Electronics,Smartphones,Brand_C,SUP_021,225.36,470.35
+PRD_0003,Brand_D Smartphones Model 3,Electronics,Smartphones,Brand_D,SUP_023,305.74,576.46
+PRD_0004,Brand_E Smartphones Model 4,Electronics,Smartphones,Brand_E,SUP_027,116.55,224.11
+PRD_0005,Brand_F Laptops Model 5,Electronics,Laptops,Brand_F,SUP_005,288.21,510.18
+PRD_0006,Brand_G Laptops Model 6,Electronics,Laptops,Brand_G,SUP_011,369.23,708.37
+PRD_0007,Brand_H Laptops Model 7,Electronics,Laptops,Brand_H,SUP_009,151.14,206.74
+PRD_0008,Brand_I Laptops Model 8,Electronics,Laptops,Brand_I,SUP_029,387.68,578.95
+PRD_0009,Brand_J Audio Model 9,Electronics,Audio,Brand_J,SUP_004,17.3,28.73
+PRD_0010,Brand_K Audio Model 10,Electronics,Audio,Brand_K,SUP_019,163.41,210.24
+PRD_0011,Brand_L Audio Model 11,Electronics,Audio,Brand_L,SUP_009,314.01,486.11
+PRD_0012,Brand_M Audio Model 12,Electronics,Audio,Brand_M,SUP_018,378.59,684.54
+PRD_0013,Brand_N Accessories Model 13,Electronics,Accessories,Brand_N,SUP_025,59.93,121.79
+PRD_0014,Brand_O Accessories Model 14,Electronics,Accessories,Brand_O,SUP_030,316.15,444.41
+PRD_0015,Brand_P Accessories Model 15,Electronics,Accessories,Brand_P,SUP_016,369.58,628.17
+PRD_0016,Brand_Q Accessories Model 16,Electronics,Accessories,Brand_Q,SUP_028,124.76,261.58
+PRD_0017,Brand_R Wearables Model 17,Electronics,Wearables,Brand_R,SUP_030,404.77,813.74
+PRD_0018,Brand_S Wearables Model 18,Electronics,Wearables,Brand_S,SUP_027,93.03,134.99
+PRD_0019,Brand_T Wearables Model 19,Electronics,Wearables,Brand_T,SUP_019,329.42,661.28
+PRD_0020,Brand_U Wearables Model 20,Electronics,Wearables,Brand_U,SUP_024,187.98,375.77
+PRD_0021,Brand_V Men's Wear Model 21,Apparel,Men's Wear,Brand_V,SUP_020,47.02,63.26
+PRD_0022,Brand_W Men's Wear Model 22,Apparel,Men's Wear,Brand_W,SUP_006,304.35,524.28
+PRD_0023,Brand_X Men's Wear Model 23,Apparel,Men's Wear,Brand_X,SUP_016,54.65,98.21
+PRD_0024,Brand_Y Men's Wear Model 24,Apparel,Men's Wear,Brand_Y,SUP_029,134.93,199.0
+PRD_0025,Brand_Z Women's Wear Model 25,Apparel,Women's Wear,Brand_Z,SUP_002,314.43,561.81
+PRD_0026,Brand_A Women's Wear Model 26,Apparel,Women's Wear,Brand_A,SUP_009,87.41,106.31
+PRD_0027,Brand_B Women's Wear Model 27,Apparel,Women's Wear,Brand_B,SUP_014,153.18,286.73
+PRD_0028,Brand_C Women's Wear Model 28,Apparel,Women's Wear,Brand_C,SUP_008,383.66,687.46
+PRD_0029,Brand_D Footwear Model 29,Apparel,Footwear,Brand_D,SUP_001,248.72,412.36
+PRD_0030,Brand_E Footwear Model 30,Apparel,Footwear,Brand_E,SUP_022,126.69,179.85
+PRD_0031,Brand_F Footwear Model 31,Apparel,Footwear,Brand_F,SUP_006,440.71,721.91
+PRD_0032,Brand_G Footwear Model 32,Apparel,Footwear,Brand_G,SUP_008,287.7,551.04
+PRD_0033,Brand_H Activewear Model 33,Apparel,Activewear,Brand_H,SUP_030,293.85,529.53
+PRD_0034,Brand_I Activewear Model 34,Apparel,Activewear,Brand_I,SUP_001,95.91,177.45
+PRD_0035,Brand_J Activewear Model 35,Apparel,Activewear,Brand_J,SUP_019,261.68,495.02
+PRD_0036,Brand_K Activewear Model 36,Apparel,Activewear,Brand_K,SUP_017,447.6,726.43
+PRD_0037,Brand_L Accessories Model 37,Apparel,Accessories,Brand_L,SUP_014,412.54,632.48
+PRD_0038,Brand_M Accessories Model 38,Apparel,Accessories,Brand_M,SUP_009,429.35,643.03
+PRD_0039,Brand_N Accessories Model 39,Apparel,Accessories,Brand_N,SUP_014,435.33,899.94
+PRD_0040,Brand_O Accessories Model 40,Apparel,Accessories,Brand_O,SUP_001,43.15,63.65
+PRD_0041,Brand_P Cookware Model 41,Home & Kitchen,Cookware,Brand_P,SUP_023,128.13,209.72
+PRD_0042,Brand_Q Cookware Model 42,Home & Kitchen,Cookware,Brand_Q,SUP_018,254.99,520.83
+PRD_0043,Brand_R Cookware Model 43,Home & Kitchen,Cookware,Brand_R,SUP_026,419.21,529.62
+PRD_0044,Brand_S Cookware Model 44,Home & Kitchen,Cookware,Brand_S,SUP_018,280.6,586.75
+PRD_0045,Brand_T Appliances Model 45,Home & Kitchen,Appliances,Brand_T,SUP_002,121.83,178.57
+PRD_0046,Brand_U Appliances Model 46,Home & Kitchen,Appliances,Brand_U,SUP_026,335.94,613.87
+PRD_0047,Brand_V Appliances Model 47,Home & Kitchen,Appliances,Brand_V,SUP_011,321.92,546.47
+PRD_0048,Brand_W Appliances Model 48,Home & Kitchen,Appliances,Brand_W,SUP_010,366.12,706.28
+PRD_0049,Brand_X Furniture Model 49,Home & Kitchen,Furniture,Brand_X,SUP_025,279.07,355.38
+PRD_0050,Brand_Y Furniture Model 50,Home & Kitchen,Furniture,Brand_Y,SUP_007,230.67,442.53
+PRD_0051,Brand_Z Furniture Model 51,Home & Kitchen,Furniture,Brand_Z,SUP_001,41.21,64.17
+PRD_0052,Brand_A Furniture Model 52,Home & Kitchen,Furniture,Brand_A,SUP_014,401.6,604.08
+PRD_0053,Brand_B Decor Model 53,Home & Kitchen,Decor,Brand_B,SUP_028,264.7,422.1
+PRD_0054,Brand_C Decor Model 54,Home & Kitchen,Decor,Brand_C,SUP_022,154.39,206.81
+PRD_0055,Brand_D Decor Model 55,Home & Kitchen,Decor,Brand_D,SUP_030,136.08,235.66
+PRD_0056,Brand_E Decor Model 56,Home & Kitchen,Decor,Brand_E,SUP_022,120.11,148.33
+PRD_0057,Brand_F Bedding Model 57,Home & Kitchen,Bedding,Brand_F,SUP_015,168.48,221.44
+PRD_0058,Brand_G Bedding Model 58,Home & Kitchen,Bedding,Brand_G,SUP_001,374.26,540.58
+PRD_0059,Brand_H Bedding Model 59,Home & Kitchen,Bedding,Brand_H,SUP_012,284.07,362.7
+PRD_0060,Brand_I Bedding Model 60,Home & Kitchen,Bedding,Brand_I,SUP_013,95.53,150.0
+PRD_0061,Brand_J Skincare Model 61,Health & Personal,Skincare,Brand_J,SUP_003,290.47,538.38
+PRD_0062,Brand_K Skincare Model 62,Health & Personal,Skincare,Brand_K,SUP_013,436.6,804.71
+PRD_0063,Brand_L Skincare Model 63,Health & Personal,Skincare,Brand_L,SUP_019,359.88,519.58
+PRD_0064,Brand_M Skincare Model 64,Health & Personal,Skincare,Brand_M,SUP_028,337.38,481.03
+PRD_0065,Brand_N Vitamins Model 65,Health & Personal,Vitamins,Brand_N,SUP_026,433.57,846.49
+PRD_0066,Brand_O Vitamins Model 66,Health & Personal,Vitamins,Brand_O,SUP_009,312.94,391.92
+PRD_0067,Brand_P Vitamins Model 67,Health & Personal,Vitamins,Brand_P,SUP_026,78.83,112.35
+PRD_0068,Brand_Q Vitamins Model 68,Health & Personal,Vitamins,Brand_Q,SUP_030,51.3,70.0
+PRD_0069,Brand_R Grooming Model 69,Health & Personal,Grooming,Brand_R,SUP_013,133.17,274.25
+PRD_0070,Brand_S Grooming Model 70,Health & Personal,Grooming,Brand_S,SUP_007,299.13,476.25
+PRD_0071,Brand_T Grooming Model 71,Health & Personal,Grooming,Brand_T,SUP_029,194.62,276.94
+PRD_0072,Brand_U Grooming Model 72,Health & Personal,Grooming,Brand_U,SUP_016,79.8,104.39
+PRD_0073,Brand_V Oral Care Model 73,Health & Personal,Oral Care,Brand_V,SUP_029,61.07,75.81
+PRD_0074,Brand_W Oral Care Model 74,Health & Personal,Oral Care,Brand_W,SUP_017,147.02,306.03
+PRD_0075,Brand_X Oral Care Model 75,Health & Personal,Oral Care,Brand_X,SUP_005,218.64,281.62
+PRD_0076,Brand_Y Oral Care Model 76,Health & Personal,Oral Care,Brand_Y,SUP_016,365.04,551.82
+PRD_0077,Brand_Z Stationery Model 77,Office Supplies,Stationery,Brand_Z,SUP_030,200.89,313.12
+PRD_0078,Brand_A Stationery Model 78,Office Supplies,Stationery,Brand_A,SUP_010,427.62,854.39
+PRD_0079,Brand_B Stationery Model 79,Office Supplies,Stationery,Brand_B,SUP_020,174.83,308.27
+PRD_0080,Brand_C Stationery Model 80,Office Supplies,Stationery,Brand_C,SUP_026,230.46,388.43
+PRD_0081,Brand_D Ergonomics Model 81,Office Supplies,Ergonomics,Brand_D,SUP_013,81.69,103.22
+PRD_0082,Brand_E Ergonomics Model 82,Office Supplies,Ergonomics,Brand_E,SUP_023,425.47,842.63
+PRD_0083,Brand_F Ergonomics Model 83,Office Supplies,Ergonomics,Brand_F,SUP_027,362.42,655.78
+PRD_0084,Brand_G Ergonomics Model 84,Office Supplies,Ergonomics,Brand_G,SUP_003,293.05,472.52
+PRD_0085,Brand_H Printers Model 85,Office Supplies,Printers,Brand_H,SUP_019,371.08,654.34
+PRD_0086,Brand_I Printers Model 86,Office Supplies,Printers,Brand_I,SUP_001,432.92,872.25
+PRD_0087,Brand_J Printers Model 87,Office Supplies,Printers,Brand_J,SUP_012,130.54,181.86
+PRD_0088,Brand_K Printers Model 88,Office Supplies,Printers,Brand_K,SUP_014,18.02,23.16
+PRD_0089,Brand_L Organization Model 89,Office Supplies,Organization,Brand_L,SUP_003,158.08,282.99
+PRD_0090,Brand_M Organization Model 90,Office Supplies,Organization,Brand_M,SUP_029,381.75,466.1
+PRD_0091,Brand_N Organization Model 91,Office Supplies,Organization,Brand_N,SUP_002,124.71,205.33
+PRD_0092,Brand_O Organization Model 92,Office Supplies,Organization,Brand_O,SUP_026,316.56,559.06

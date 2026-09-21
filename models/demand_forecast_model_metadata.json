@@ -1,0 +1,31 @@
+{
+  "algorithm": "GradientBoostingRegressor",
+  "features": [
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_std_7",
+    "day_of_week",
+    "month",
+    "is_weekend"
+  ],
+  "metrics": {
+    "mae": 17235.05,
+    "rmse": 21686.08,
+    "r2": -0.0493,
+    "smape": 28.85
+  },
+  "baseline_naive_metrics": {
+    "mae": 23377.0,
+    "rmse": 29793.03,
+    "r2": -0.9804,
+    "smape": 38.11
+  },
+  "train_size": 268,
+  "test_size": 67,
+  "model_name": "demand_forecast_model",
+  "saved_at": "2026-09-21T16:30:55.285718"
+}

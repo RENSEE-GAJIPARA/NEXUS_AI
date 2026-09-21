@@ -1,0 +1,102 @@
+/* Enterprise Dark Theme CSS for NEXUS AI */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="st-"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Background & Containers */
+.main {
+    background-color: #0F172A;
+    color: #F8FAFC;
+}
+
+/* Executive Metric Card Styling */
+.nexus-card {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.nexus-card:hover {
+    border-color: #3B82F6;
+    transform: translateY(-2px);
+}
+
+.nexus-card-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.nexus-card-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    margin-bottom: 4px;
+}
+
+.nexus-card-subtitle {
+    font-size: 0.8rem;
+    color: #38BDF8;
+}
+
+/* Risk Badges */
+.badge-high {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #FCA5A5;
+    border: 1px solid #EF4444;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-medium {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #FDE047;
+    border: 1px solid #F59E0B;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-low {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #6EE7B7;
+    border: 1px solid #10B981;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Header & Banner */
+.nexus-header {
+    padding: 15px 0 25px 0;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 25px;
+}
+
+.nexus-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #3B82F6 0%, #60A5FA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.nexus-subtitle {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}

@@ -1,0 +1,58 @@
+{
+  "target": "proxy_churn",
+  "features": [
+    "age",
+    "recency_days",
+    "frequency",
+    "monetary_total",
+    "avg_order_value",
+    "product_diversity",
+    "tenure_days"
+  ],
+  "algorithm": "LogisticRegression",
+  "metrics": {
+    "accuracy": 0.992,
+    "precision": 1.0,
+    "recall": 0.9643,
+    "f1": 0.9818,
+    "roc_auc": 0.9996,
+    "pr_auc": 0.9988
+  },
+  "all_candidate_metrics": {
+    "Dummy": {
+      "accuracy": 0.776,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.224
+    },
+    "LogisticRegression": {
+      "accuracy": 0.992,
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "roc_auc": 0.9996,
+      "pr_auc": 0.9988
+    },
+    "RandomForest": {
+      "accuracy": 0.992,
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "roc_auc": 0.9996,
+      "pr_auc": 0.9988
+    },
+    "GradientBoosting": {
+      "accuracy": 0.992,
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "roc_auc": 0.9821,
+      "pr_auc": 0.9723
+    }
+  },
+  "dataset_rows": 500,
+  "model_name": "customer_risk_model",
+  "saved_at": "2026-09-21T16:30:54.897455"
+}

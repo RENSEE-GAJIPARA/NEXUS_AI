@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.streamlit/secrets.toml
+
+# Testing & IDE
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Data & Models (large binary files)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.parquet
+models/*.joblib
+models/*.pt
+
+# OS specific
+Thumbs.db
+Desktop.ini
+.DS_Store

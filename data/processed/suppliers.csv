@@ -1,0 +1,31 @@
+supplier_id,supplier_name,location_id,lead_time,reliability_score,delay_rate
+SUP_001,Apex Global Supply,LOC_07,16,0.91,0.16
+SUP_002,Vortex Components,LOC_07,20,0.73,0.31
+SUP_003,Nexus Tech Logistics,LOC_05,5,0.74,0.36
+SUP_004,Titan Industrial,LOC_05,3,0.91,0.24
+SUP_005,Pinnacle Freight,LOC_02,2,0.79,0.33
+SUP_006,Zenith Electronics,LOC_09,18,0.85,0.3
+SUP_007,Aurora Fabrics,LOC_03,13,0.85,0.35
+SUP_008,Velocity Hardware,LOC_03,6,0.88,0.06
+SUP_009,Solstice Trading,LOC_07,19,0.98,0.24
+SUP_010,Echo Distribution,LOC_02,10,0.7,0.26
+SUP_011,Beacon Manufacturing,LOC_07,13,0.84,0.21
+SUP_012,Quantum Supply,LOC_01,5,0.75,0.39
+SUP_013,Orion Metals,LOC_06,11,0.86,0.03
+SUP_014,Nova Packaging,LOC_02,13,0.97,0.23
+SUP_015,Summit Microelectronics,LOC_08,15,0.76,0.21
+SUP_016,Atlas Chemicals,LOC_08,17,0.92,0.14
+SUP_017,Prism Plastics,LOC_08,14,0.74,0.4
+SUP_018,Omega Goods,LOC_01,8,0.82,0.3
+SUP_019,Starlight Materials,LOC_08,12,0.76,0.38
+SUP_020,Horizon Logistics,LOC_03,2,0.88,0.23
+SUP_021,Bravura Importers,LOC_10,10,0.97,0.22
+SUP_022,Crestview Wholesale,LOC_02,2,0.72,0.28
+SUP_023,Dynasty Trade Co,LOC_08,6,0.91,0.17
+SUP_024,Elevate Direct,LOC_03,2,0.81,0.44
+SUP_025,Frontier Supply,LOC_03,2,0.91,0.07
+SUP_026,Genesis Components,LOC_07,10,0.91,0.05
+SUP_027,Hyperion Products,LOC_03,8,0.84,0.34
+SUP_028,Infinity Tech,LOC_04,6,0.77,0.3
+SUP_029,Jubilee Distribution,LOC_04,14,0.72,0.27
+SUP_030,Keystone Freight,LOC_06,3,0.88,0.09
