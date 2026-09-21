@@ -30,13 +30,13 @@ def render():
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        render_kpi_card("Total Revenue", f"${total_rev:,.2f}", "365-Day Volume", "#3B82F6")
+        render_kpi_card("Total Revenue", f"${total_rev:,.2f}", "365-Day Volume", "#2563EB")
     with col2:
-        render_kpi_card("Total Transactions", f"{total_orders:,}", f"Avg Basket ${avg_order_val:.2f}", "#10B981")
+        render_kpi_card("Total Transactions", f"{total_orders:,}", f"Avg Basket ${avg_order_val:.2f}", "#16A34A")
     with col3:
-        render_kpi_card("Active Customers", f"{num_cust:,}", "500 Profiles Tracked", "#8B5CF6")
+        render_kpi_card("Active Customers", f"{num_cust:,}", "500 Profiles Tracked", "#9333EA")
     with col4:
-        render_kpi_card("Active Suppliers", f"{num_sup}", f"{num_prod} Products", "#F59E0B")
+        render_kpi_card("Active Suppliers", f"{num_sup}", f"{num_prod} Products", "#D97706")
         
     st.markdown("---")
     
@@ -53,7 +53,7 @@ def render():
         render_insight_box(
             "Executive Telemetry Summary",
             f"NEXUS AI has ingested {total_orders:,} transactions across {num_cust} customers and {num_sup} suppliers. "
-            f"Overall data quality score is evaluated at 100.0%. System has pre-flagged 22% inactive customers for proactive churn retention.",
-            "📊"
+            f"Overall data quality score is evaluated at 100.0%. System has pre-flagged 22% inactive customers for proactive churn retention."
         )
         render_methodology_disclaimer()
+

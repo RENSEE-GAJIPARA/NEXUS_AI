@@ -1,7 +1,7 @@
 """KPI Metric Card Component for NEXUS AI."""
 import streamlit as st
 
-def render_kpi_card(title: str, value: str, subtitle: str = "", border_color: str = "#334155"):
+def render_kpi_card(title: str, value: str, subtitle: str = "", border_color: str = "#2563EB"):
     """Render custom html metric card."""
     html_content = f"""
     <div class="nexus-card" style="border-left: 4px solid {border_color};">
@@ -21,3 +21,4 @@ def render_risk_badge(risk_level: str) -> str:
         return '<span class="badge-medium">MEDIUM RISK</span>'
     else:
         return '<span class="badge-low">LOW RISK</span>'
+

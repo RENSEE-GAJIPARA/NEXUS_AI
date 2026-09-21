@@ -38,8 +38,13 @@ def render():
         
     st.markdown("---")
     st.subheader("Inventory Stockout Risk Watchlist")
-    if not df_inv.empty:
+    if not df_inv.empty and "stockout_risk" in df_inv.columns:
         low_stock = df_inv[df_inv["stockout_risk"] == 1].merge(df_prod[["product_id", "product_name", "category", "supplier_id"]], on="product_id", how="left")
-        render_data_table(low_stock[["product_id", "product_name", "category", "store_id", "stock_level", "reorder_point", "supplier_id"]].head(10))
+        desired_low = ["product_id", "product_name", "category", "store_id", "stock_level", "reorder_point", "supplier_id"]
+        avail_low = [c for c in desired_low if c in low_stock.columns]
+        render_data_table(low_stock[avail_low].head(10))
     else:
-        render_data_table(prod_feat[["product_id", "product_name", "category", "unit_price", "total_units_sold", "total_revenue"]].head(10))
+        desired_prod = ["product_id", "product_name", "category", "unit_price", "total_units_sold", "total_revenue"]
+        avail_prod = [c for c in desired_prod if c in prod_feat.columns]
+        render_data_table(prod_feat[avail_prod].head(10))
+

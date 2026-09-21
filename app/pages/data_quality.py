@@ -17,11 +17,11 @@ def render():
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        render_kpi_card("Data Quality Score", f"{score}%", f"{passed}/{total} Automated Audits Passed", "#10B981" if score >= 90 else "#EF4444")
+        render_kpi_card("Data Quality Score", f"{score}%", f"{passed}/{total} Automated Audits Passed", "#16A34A" if score >= 90 else "#DC2626")
     with col2:
-        render_kpi_card("Duplicate Rows", "0", "100% Uniqueness Validated", "#3B82F6")
+        render_kpi_card("Duplicate Rows", "0", "100% Uniqueness Validated", "#2563EB")
     with col3:
-        render_kpi_card("Referential Integrity", "PASSED", "Foreign Key Relationships Verified", "#8B5CF6")
+        render_kpi_card("Referential Integrity", "PASSED", "Foreign Key Relationships Verified", "#9333EA")
         
     st.markdown("---")
     st.subheader("Canonical Table Metrics Summary")
@@ -37,3 +37,4 @@ def render():
         prof = profile_dataframe(tables[selected_t], selected_t)
         df_cols = pd.DataFrame.from_dict(prof["columns"], orient="index").reset_index().rename(columns={"index": "column_name"})
         render_data_table(df_cols)
+

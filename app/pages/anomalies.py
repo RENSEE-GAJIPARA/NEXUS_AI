@@ -28,14 +28,17 @@ def render():
     
     c1, c2, c3 = st.columns(3)
     with c1:
-        render_kpi_card("Total Flagged Anomalies", f"{num_flagged:,}", f"Out of {len(df_tx):,} Transactions", "#EF4444")
+        render_kpi_card("Total Flagged Anomalies", f"{num_flagged:,}", f"Out of {len(df_tx):,} Transactions", "#DC2626")
     with c2:
-        render_kpi_card("Anomaly Rate", f"{ano_rate:.2%}", "Contamination Target 3.0%", "#F59E0B")
+        render_kpi_card("Anomaly Rate", f"{ano_rate:.2%}", "Contamination Target 3.0%", "#D97706")
     with c3:
-        render_kpi_card("Highest Anomaly Score", f"{flagged['anomaly_score'].max() if not flagged.empty else 0.0:.4f}", "Isolation Forest Score", "#3B82F6")
+        render_kpi_card("Highest Anomaly Score", f"{flagged['anomaly_score'].max() if not flagged.empty else 0.0:.4f}", "Isolation Forest Score", "#2563EB")
         
     st.markdown("---")
     st.subheader("Flagged Transactions Requiring Investigation")
-    render_data_table(flagged[["transaction_id", "customer_id", "store_id", "transaction_date", "total_amount", "total_items", "max_discount", "anomaly_score", "anomaly_explanation"]])
+    desired_cols = ["transaction_id", "customer_id", "store_id", "transaction_date", "total_amount", "total_items", "max_discount", "anomaly_score", "anomaly_explanation"]
+    avail_cols = [c for c in desired_cols if c in flagged.columns]
+    render_data_table(flagged[avail_cols])
     
     render_methodology_disclaimer("Anomaly detection identifies statistical multi-variable outliers. Flagged records indicate unusual transaction characteristics and do not automatically constitute verified fraud.")
+

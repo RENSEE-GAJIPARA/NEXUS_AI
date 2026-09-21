@@ -28,15 +28,15 @@ def render():
     forecast_df = generate_multi_step_forecast(df_tx, horizon_days=horizon)
     
     _, metadata = get_model_and_metadata("demand_forecast_model")
-    metrics = metadata.get("metrics", {})
+    metrics = metadata.get("metrics", {}) if metadata else {}
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        render_kpi_card("Projected Horizon Revenue", f"${forecast_df['forecasted_revenue'].sum():,.2f}", f"Next {horizon} Days Total", "#10B981")
+        render_kpi_card("Projected Horizon Revenue", f"${forecast_df['forecasted_revenue'].sum():,.2f}", f"Next {horizon} Days Total", "#16A34A")
     with col2:
-        render_kpi_card("Model MAE", f"${metrics.get('mae', 0.0):,.2f}", "Gradient Boosting Error", "#3B82F6")
+        render_kpi_card("Model MAE", f"${metrics.get('mae', 0.0):,.2f}", "Gradient Boosting Error", "#2563EB")
     with col3:
-        render_kpi_card("Model SMAPE", f"{metrics.get('smape', 0.0):.2f}%", "Symmetric MAPE", "#8B5CF6")
+        render_kpi_card("Model SMAPE", f"{metrics.get('smape', 0.0):.2f}%", "Symmetric MAPE", "#9333EA")
         
     st.markdown("---")
     st.subheader("Historical Sales vs Forward Forecast")
@@ -46,3 +46,4 @@ def render():
     st.markdown("---")
     st.subheader("Daily Forecast Table")
     render_data_table(forecast_df)
+

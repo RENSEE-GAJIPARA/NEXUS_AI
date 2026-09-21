@@ -33,16 +33,19 @@ def render():
                 row["supplier_name"],
                 f"Risk: {row['composite_supplier_risk']:.2f}",
                 f"Delay Rate: {row['delay_rate']:.1%} | Products: {int(row['num_products'])}",
-                "#EF4444" if row["composite_supplier_risk"] > 0.35 else "#F59E0B"
+                "#DC2626" if row["composite_supplier_risk"] > 0.35 else "#D97706"
             )
             
     with col2:
         st.subheader("Supplier Operational Metrics")
-        render_data_table(sup_feat[["supplier_id", "supplier_name", "lead_time", "reliability_score", "delay_rate", "num_products", "composite_supplier_risk"]])
+        desired_cols = ["supplier_id", "supplier_name", "lead_time", "reliability_score", "delay_rate", "num_products", "composite_supplier_risk"]
+        avail_cols = [c for c in desired_cols if c in sup_feat.columns]
+        render_data_table(sup_feat[avail_cols])
         
     st.markdown("---")
     st.subheader("Supplier Deep Dive")
     selected_sup = st.selectbox("Select Supplier ID to inspect:", sup_feat["supplier_id"].tolist())
     if selected_sup:
         s_row = sup_feat[sup_feat["supplier_id"] == selected_sup].iloc[0]
-        render_insight_box("Supplier Analytical Insight", generate_supplier_risk_insight(s_row, int(s_row["num_products"]) * 12), "🏭")
+        render_insight_box("Supplier Analytical Insight", generate_supplier_risk_insight(s_row, int(s_row["num_products"]) * 12))
+

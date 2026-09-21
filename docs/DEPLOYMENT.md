@@ -31,7 +31,7 @@ python scripts/run_tests.py
 
 ### Step 5: Launch Streamlit Application
 ```bash
-streamlit run app/app.py
+python -m streamlit run app/app.py
 ```
 
 ---

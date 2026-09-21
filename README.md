@@ -107,7 +107,7 @@ python scripts/run_tests.py
 
 ### 4. Launch Streamlit Web Application
 ```bash
-streamlit run app/app.py
+python -m streamlit run app/app.py
 ```
 
 ---

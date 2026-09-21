@@ -4,11 +4,11 @@ import networkx as nx
 from src.graph.graph_analysis import extract_subgraph
 
 NODE_COLORS = {
-    "Customer": "#3B82F6",
-    "Product": "#10B981",
-    "Supplier": "#EF4444",
-    "Store": "#F59E0B",
-    "Location": "#8B5CF6",
+    "Customer": "#2563EB",
+    "Product": "#16A34A",
+    "Supplier": "#DC2626",
+    "Store": "#D97706",
+    "Location": "#9333EA",
     "Transaction": "#64748B"
 }
 
@@ -39,7 +39,7 @@ def render_plotly_graph(G: nx.Graph, center_node: str = None, radius: int = 1, m
         
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
-        line=dict(width=1, color="#475569"),
+        line=dict(width=1, color="#94A3B8"),
         hoverinfo="none",
         mode="lines"
     )
@@ -60,7 +60,7 @@ def render_plotly_graph(G: nx.Graph, center_node: str = None, radius: int = 1, m
         name = sub_g.nodes[node].get("name", node)
         deg = sub_g.degree(node)
         
-        node_color.append(NODE_COLORS.get(ntype, "#94A3B8"))
+        node_color.append(NODE_COLORS.get(ntype, "#64748B"))
         node_text.append(f"Node: {node}<br>Name: {name}<br>Type: {ntype}<br>Degree: {deg}")
         node_size.append(max(12, min(30, 8 + deg * 2)))
         
@@ -70,12 +70,12 @@ def render_plotly_graph(G: nx.Graph, center_node: str = None, radius: int = 1, m
         hoverinfo="text",
         text=[node for node in sub_g.nodes()],
         textposition="top center",
-        textfont=dict(color="#F8FAFC", size=9),
+        textfont=dict(color="#172033", size=9),
         hovertext=node_text,
         marker=dict(
             color=node_color,
             size=node_size,
-            line=dict(width=1.5, color="#0F172A")
+            line=dict(width=1.5, color="#FFFFFF")
         )
     )
     
@@ -88,6 +88,8 @@ def render_plotly_graph(G: nx.Graph, center_node: str = None, radius: int = 1, m
         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
         paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(15,23,42,0.6)",
+        plot_bgcolor="#FFFFFF",
+        font=dict(color="#172033", family="Inter, sans-serif")
     )
     return fig
+

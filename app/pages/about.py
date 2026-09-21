@@ -7,7 +7,7 @@ def render():
     st.markdown("NEXUS AI is an autonomous graph-based business intelligence and decision-support engine.")
     
     st.markdown("""
-    ### 🏛️ System Architecture Overview
+    ### System Architecture Overview
     NEXUS AI connects heterogeneous business entities (**Customer**, **Product**, **Supplier**, **Store**, **Location**, **Transaction**) 
     into a unified graph network and predictive analytical pipeline.
 
@@ -25,7 +25,7 @@ def render():
 
     ---
 
-    ### 🔬 Methodology Breakdown
+    ### Methodology Breakdown
 
     #### 1. Predictive Risk Engine
     - **Method:** Supervised classification (Gradient Boosting / Random Forest).
@@ -52,3 +52,4 @@ def render():
     
     st.markdown("---")
     render_methodology_disclaimer()
+

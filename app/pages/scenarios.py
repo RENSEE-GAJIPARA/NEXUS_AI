@@ -20,7 +20,7 @@ def render():
         base_rev = float(df_tx["total_amount"].sum())
         base_dem = float(len(df_tx))
         
-    st.sidebar.markdown("### 🎛️ Scenario Controls")
+    st.sidebar.markdown("### Scenario Controls")
     price_pct = st.sidebar.slider("Unit Price Adjustment (%)", -30.0, 30.0, 0.0, step=1.0)
     disc_pct = st.sidebar.slider("Discount Rate Change (%)", -15.0, 25.0, 0.0, step=1.0)
     inv_factor = st.sidebar.slider("Inventory Level Multiplier", 0.5, 2.0, 1.0, step=0.1)
@@ -39,16 +39,15 @@ def render():
     with col1:
         render_kpi_card("Baseline Revenue", f"${res['baseline_revenue']:,.2f}", "365-Day Historical Baseline")
     with col2:
-        render_kpi_card("Simulated Revenue", f"${res['simulated_revenue']:,.2f}", f"Delta: {res['revenue_pct_diff']:+.2f}%", "#10B981" if res['revenue_pct_diff'] >= 0 else "#EF4444")
+        render_kpi_card("Simulated Revenue", f"${res['simulated_revenue']:,.2f}", f"Delta: {res['revenue_pct_diff']:+.2f}%", "#16A34A" if res['revenue_pct_diff'] >= 0 else "#DC2626")
     with col3:
         render_kpi_card("Baseline Demand", f"{res['baseline_demand']:,.0f}", "Transactions / Units")
     with col4:
-        render_kpi_card("Simulated Demand", f"{res['simulated_demand']:,.0f}", f"Delta: {res['demand_pct_diff']:+.2f}%", "#3B82F6")
+        render_kpi_card("Simulated Demand", f"{res['simulated_demand']:,.0f}", f"Delta: {res['demand_pct_diff']:+.2f}%", "#2563EB")
         
     st.markdown("---")
     st.subheader("Simulation Analysis Summary")
     
-    delta_color = "positive" if res['revenue_abs_diff'] >= 0 else "negative"
     st.write(
         f"Under the selected parameters (**Price:** {price_pct:+.1f}%, **Discount:** {disc_pct:+.1f}%, **Inventory Factor:** {inv_factor:.1f}x, **Supplier Availability:** {sup_avail:.0f}%), "
         f"projected annual revenue shifts by **${res['revenue_abs_diff']:+,.2f}** ({res['revenue_pct_diff']:+.2f}%). "
@@ -57,3 +56,4 @@ def render():
     
     st.markdown("---")
     render_methodology_disclaimer(res["disclaimer"])
+
